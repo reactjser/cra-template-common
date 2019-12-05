@@ -3,6 +3,9 @@
     "format": "prettier --write \"src/**/*.{js,jsx,json,css,scss}\""
   },
   "dependencies": {
-    "prettier": "^1.19.1"
+    "node-sass": "^4.13.0",
+    "prettier": "^1.19.1",
+    "prop-types": "^15.7.2",
+    "react-router-dom": "^5.1.2"
   }
 }
