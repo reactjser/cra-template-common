@@ -1,0 +1,20 @@
+{
+  "name": "cra-template-common",
+  "version": "0.0.1",
+  "description": "The common template for Create React App.",
+  "main": "template.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reactjser/cra-template-common.git"
+  },
+  "author": "reactjser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reactjser/cra-template-common/issues"
+  },
+  "homepage": "https://github.com/reactjser/cra-template-common#readme",
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
