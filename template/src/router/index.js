@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from '../views/Home';
-import About from '../views/About';
+
+const Home = lazy(() => import('../views/Home'));
+const About = lazy(() => import('../views/About'));
 
 const Routes = () => {
   return (
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-    </Switch>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+      </Switch>
+    </Suspense>
   );
 };
 
