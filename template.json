@@ -3,7 +3,7 @@
     "scripts": {
       "format": "prettier --write \"src/**/*.{js,jsx,json,css,scss}\""
     },
-    "devDependencies": {
+    "dependencies": {
       "enzyme": "^3.11.0",
       "enzyme-adapter-react-16": "^1.15.2",
       "husky": "^4.2.3",
