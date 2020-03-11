@@ -1,7 +1,22 @@
 import React from 'react';
+import { HashRouter, NavLink } from 'react-router-dom';
+import Routes from './router';
 
 const App = () => {
-  return <h2>Welcome to React</h2>;
+  return (
+    <HashRouter>
+      <div id="nav">
+        <NavLink exact to="/">
+          Home
+        </NavLink>{' '}
+        |{' '}
+        <NavLink exact to="/about">
+          About
+        </NavLink>
+      </div>
+      <Routes />
+    </HashRouter>
+  );
 };
 
 export default App;

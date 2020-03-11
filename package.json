@@ -1,6 +1,6 @@
 {
   "name": "cra-template-common",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "The common template for Create React App.",
   "main": "template.json",
   "repository": {
