@@ -3,8 +3,18 @@
     "scripts": {
       "format": "prettier --write \"src/**/*.{js,jsx,json,css,scss}\""
     },
-    "dependencies": {
+    "devDependencies": {
+      "husky": "^4.2.3",
+      "lint-staged": "^10.0.8",
       "prettier": "^1.19.1"
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "lint-staged": {
+      "src/**/*.{js,jsx,json,css,scss}": ["prettier --write"]
     }
   }
 }
